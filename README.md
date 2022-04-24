@@ -1,38 +1,35 @@
-# thinkpad-x1-carbon-5th-gen-hackintosh
-<h1 align="center"> Hackintosh the Thinkpad X1 Carbon 5th Generation </h1>
+<h1 align="center"> Thinkpad X1 Carbon 5th Generation Hackintosh on macOS Monterey 12.3.3 </h1>
 
 <p align="center">
 <a href="https://www.apple.com/macos/big-sur/">
-  <img src="https://img.shields.io/badge/macOS-Monterey_v12.3.1-red.svg"/> </a>
+  <img src="https://img.shields.io/badge/macOS-Monterey_v12.3.3-red.svg"/> </a>
 <a href="https://github.com/acidanthera/OpenCorePkg">
   <img src="https://img.shields.io/badge/OpenCore-0.8.0-12AED6"/> </a>
-<a href="https://github.com/tylernguyen/x1c6-hackintosh/issues"> 
-  <img src="https://img.shields.io/github/issues/tylernguyen/x1c6-hackintosh"/> </a>
-<a href="https://github.com/tylernguyen/x1c6-hackintosh/commits/master"> 
-  <img src="https://img.shields.io/github/last-commit/tylernguyen/x1c6-hackintosh"/> </a>
-<a href="https://github.com/tylernguyen/x1c6-hackintosh/issues?q=is%3Aissue+label%3A%22help+wanted%22+is%3Aclosed">
-  <img src="https://img.shields.io/badge/need%20help-2-blue"/> </a>
 </p>
 
-**4/23/2022**  
-As of now, this build is quite stable and will likely be supported until the SMBIOS is out of date in Apple's Mac lineup. Until then, minor changes may be added.
+## Hardware
+- Intel i7-7600U w/ HD 620 integrated graphics
 
-#### Installing macOS on unsupported hardware is risky and may cause damage if done incorrectly. I do **not** recommend attempting this install without some background in Hackintosh-ing or reading logs.
+## Using alternate macOS Versions
+- Booting currently to Monterey but Big Sur, Mojave and Catalina working!
+- Other versions of macOS **will** need changes to config.plist, from my experience at minimum AirportItlwm will need changing!
+
+## BIOS Settings
+- Security -> Security Chip -> Disabled
+- Security ->  I/O Port Access -> Wireless WAN, Fingerprint Reader, Memory Card Slot -> Disabled
+- Security -> Fingerprint -> Disabled (all mentions, will not work in macOS likely ever)
+- Security -> Secure Boot -> Disabled (VERY important!)
+- Startup -> UEFI/Legacy Boot -> UEFI Only
+- Startup -> CSM Support -> No
+- Config -> USB -> Always On USB -> Disabled
 
 
+## Updates
 
-## Update
-
-##### Recent
-
-### 2022-4-23
-
-#### Added
-
-#### Changed
-- OC to 0.8.0
-- macOS to Monterey 12.3.1
-- Upgraded various Acidanthera kexts
+#### 4/23/22 - Initial Commit
+- Added readme and EFI folder
+- macOS to Monterey 12.3.3
+- kexts needed for Monterey added (AirportItlwm, Lilu, and VirtualSMC)
 
 # Other Repositories
 
@@ -44,5 +41,5 @@ As of now, this build is quite stable and will likely be supported until the SMB
 - [@B0hrer](https://github.com/B0hrer/thinkpad-x1c5-hackintosh) for the vast majority of configuration and SSDT patching. Thank you so much!
 - [@corpnewt](https://github.com/corpnewt) for [GibMacOS](https://github.com/corpnewt/gibMacOS) and [EFIMount](https://github.com/corpnewt/MountEFI).
 - [Acidanthera](https://github.com/acidanthera) for basically all of modern Hacks and the majority of kexts and code used!
+- [@tylernguyen](https://github.com/tylernguyen) for a beautiful readme template and amazing documentation!
 
-Originally created by @tylermguyen with minor changes by me.
