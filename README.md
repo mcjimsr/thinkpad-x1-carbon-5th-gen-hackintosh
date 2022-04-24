@@ -9,6 +9,8 @@
 
 ## Hardware
 - Intel i7-7600U w/ HD 620 integrated graphics
+- KingFast SATA SSD (refurbished device from Amazon, will use an NVME drive once I get it installed and updated)
+- Samsung 870 EVO PLUS (**Not currently installed!** as Samsung EVO SSDs have issues loading macOS)
 
 ## Using alternate macOS Versions
 - Booting currently to Monterey but Big Sur, Mojave and Catalina working!
